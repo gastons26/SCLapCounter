@@ -7,8 +7,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default
+      name: 'dashboard',
+      component: require('@/components/Dashboard/Dashboard').default
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: require('@/components/Settings/Settings').default
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: require('@/components/About/About').default
+    },
+    {
+      path: '/races',
+      name: 'races',
+      component: require('@/components/Races/Races').default
     },
     {
       path: '*',
